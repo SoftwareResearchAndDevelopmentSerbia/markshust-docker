@@ -1,0 +1,6 @@
+.idea/
+/db_backup/*
+!/db_backup/.gitkeep
+env/db.env
+env/magento.env
+src/
