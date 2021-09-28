@@ -25,6 +25,9 @@ services:
     links:
       - db
     volumes: *appvolumes
+    environment:
+      - "XDEBUG_CONFIG=mode=debug remote_host=172.17.0.1 client_port=9003 idekey=PHPSTORM start_with_request=yes"
+      - "PHP_IDE_CONFIG=serverName=magento.test"
 
   db:
     image: percona:5.7
